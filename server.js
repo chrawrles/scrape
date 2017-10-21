@@ -128,7 +128,7 @@ app.get("/articles/:id", function(req, res) {
 // Delete article by its ObjectId
 app.delete('/delete/:id', function(req, res) {
 var id = req.param("id");
-    MyModel.remove({
+    Article.remove({
         _id: id 
     }, function(err){
         if (err) {

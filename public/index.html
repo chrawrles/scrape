@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta charset="UTF-8">
-    <title>Scraping With Mongoose</title>
+    <title>Scraping With Mongoose HW</title>
     <style>
       body { background-color: #F2F6D0 }
       #wrapper {
@@ -24,7 +25,7 @@
       textarea, input {
         display: block;
         width: 100%;
-        background-color: #FCF5C7;
+        background-color: white;
       }
       input {
         height: 36px;
@@ -37,8 +38,14 @@
     </style>
   </head>
   <body>
+
     <div id="wrapper">
       <h1>Article Scraper</h1>
+      <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#">Scrape</a></li>
+      <li role="presentation"><a href="#">Save</a></li>
+      <li role="presentation"><a href="#">Delete</a></li>
+    </ul>
       <h2><i>Start scraping NPR articles!</i></h2>
       <div id="articles"></div>
       <div id="notes"></div>
