@@ -11,6 +11,11 @@ var ArticleSchema = new Schema({
     required: true
   },
   // link is a required string
+  teaser: {
+    type: String,
+    required: true
+  },
+  // teaser is a required
   link: {
     type: String,
     required: true
